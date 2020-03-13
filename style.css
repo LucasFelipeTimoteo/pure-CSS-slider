@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: rgb(47, 47, 47);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    height: 400px;
+    width: 700px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    width: 500%;
+}
+
+.slides [name=radio] {
+    position: absolute;
+    left: 50%;
+    visibility: hidden;
+}
+
+.imgs {
+    display: flex;
+    transition: 0.6s;
+}
+
+.imgs img {
+    width: 20%;
+    height: 100%;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.controls label {
+    height: 10px;
+    width: 50px;
+    border: 2px solid white;
+    margin: 0 10px;
+    background: rgba(255, 255, 255, 0.246);
+}
+
+.controls label:hover {
+    background: white;
+}
+
+#radio1:checked ~ .imgs {
+    transform: translateX(0%);
+}
+
+#radio2:checked ~ .imgs {
+    transform: translateX(-20%);
+}
+
+#radio3:checked ~ .imgs {
+    transform: translateX(-40%);
+}
+
+#radio4:checked ~ .imgs {
+    transform: translateX(-60%);
+}
+
+#radio5:checked ~ .imgs {
+    transform: translateX(-80%);
+}
+
