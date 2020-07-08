@@ -1,3 +1,3 @@
-## Demo GIF
+# Demo GIF
 
 ![gif](./gif/slider.gif)
